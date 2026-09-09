@@ -3,14 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โปรไฟล์ของญาณพัฒน์</title>
-    <link rel="stylesheet" href="style.css">
+    <title>โปรไฟล์ของอัฑฒ์</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .navbar {
+            background-color: #0f172a;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        .navbar a:hover,
+        .navbar .active {
+            background-color: #2563eb;
+        }
+
+        .profile-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .profile-box {
+            background-color: white;
+            padding: 35px;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #2563eb;
+        }
+
+        h1 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        .introduction {
+            color: #64748b;
+        }
+
+        .personal-info {
+            max-width: 500px;
+            margin: 25px auto;
+            text-align: left;
+            background-color: #eff6ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .personal-info p {
+            border-bottom: 1px solid #bfdbfe;
+            padding-bottom: 10px;
+        }
+
+        .personal-info p:last-child {
+            border-bottom: none;
+        }
+
+        .favorites {
+            margin-top: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 800px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        tbody th {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background-color: #0f172a;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 700px) {
+            .navbar a {
+                display: block;
+                margin: 5px;
+            }
+
+            .profile-box,
+            .favorites {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <nav class="navbar">
         <a href="index.html">หน้าหลัก</a>
-        <a href="person1.html">ญาณพัฒน์</a>
+        <a href="person1.html" class="active">อัฑฒ์</a>
         <a href="person2.html">สมาชิกคนที่ 2</a>
         <a href="person3.html">สมาชิกคนที่ 3</a>
     </nav>
@@ -18,28 +154,60 @@
     <main class="profile-container">
 
         <section class="profile-box">
-            <div class="profile-placeholder">1</div>
+            <img
+                src="person1.jpg"
+                alt="รูปโปรไฟล์ของนายญาณพัฒน์"
+                class="profile-image"
+            >
 
-            <h1>นายญาณพัฒน์ ตันวิรัต</h1>
+            <h1>นายญาณพัฒน์ ตันวิรัช</h1>
             <p class="introduction">
-                ยินดีต้อนรับเข้าสู่หน้าแนะนำตัวของผม
+                ยินดีต้อนรับเข้าสู่หน้าหน้าแนะนำตัวของผม
             </p>
 
             <div class="personal-info">
-                <p>
-                    <strong>ชื่อเล่น:</strong>
-                    ญาณพัฒน์
-                </p>
+                <p><strong>ชื่อเล่น:</strong> อัฑฒ์</p>
+                <p><strong>รหัสนักศึกษา:</strong> 67219010052</p>
+                <p><strong>ชั้นปี:</strong> ชั้นปีที่ 3</p>
+            </div>
+        </section>
 
-                <p>
-                    <strong>รหัสนักศึกษา:</strong>
-                    123456789
-                </p>
+        <section class="favorites">
+            <h2>ความสนใจและสิ่งที่ชอบ</h2>
 
-                <p>
-                    <strong>ชั้นปี:</strong>
-                    ชั้นปีที่ 3
-                </p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>หัวข้อ</th>
+                            <th>รายการที่ 1</th>
+                            <th>รายการที่ 2</th>
+                            <th>รายการที่ 3</th>
+                            <th>รายการที่ 4</th>
+                            <th>รายการที่ 5</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>เกมที่ชอบ</th>
+                            <td>Free Fire</td>
+                            <td>ROV</td>
+                            <td>FC 24</td>
+                            <td>God of War</td>
+                            <td>Far Cry 5</td>
+                        </tr>
+
+                        <tr>
+                            <th>เพลงที่ชอบ</th>
+                            <td>ดั้งเดิม</td>
+                            <td>ฤดู</td>
+                            <td>ยอม</td>
+                            <td>Greedy</td>
+                            <td>Welcome Home</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
